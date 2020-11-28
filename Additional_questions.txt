@@ -1,1 +1,6 @@
-1- 
+1- Generally, the most common error is the environment variables or not having set the absolute paths. Possibly having write logger instead of /usr/bin/logger could cause crontab not to recognize it well. In either case, it is always a good idea to be able to reproduce the error to determine the exact root cause.
+
+2- The two main families within Unix-based systems, such as Linux, are AT&T System V and Barkeley's BSD.
+If we focus exclusively on Linux, we see that they come from the Debian, Slackware and RedHat families.
+
+3- cat EOF is the redirection instructs the shell to read input from the current source until a line containing only word (with no trailing blanks) is seen. All of the lines read up to that point are then used as the standard input for a command.
