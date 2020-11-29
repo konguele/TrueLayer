@@ -21,7 +21,7 @@ cat << converttoform
 `ls -R $FOLDER > /tmp/form.txt`
 converttoform
 
-
+#Seguramente tenga que usar un bucle (While read) y el comando find. Así me busca dónde está y lo coloca dentro de la nueva ubicación, las carpetas puede crearlas de nuevo
 #We create the script that will process the information and will generate the folder hierarchy in a new path
 (
 cat << EOF
