@@ -5,6 +5,6 @@ If we focus exclusively on Linux, we see that they come from the Debian, Slackwa
 
 3- cat EOF is also known as Heredoc and its purpose is to use a form of I/O redirection to feed a command list to an interactive program or a command.
 
-4- 
+4- File exercise4.sh
 
 5- the easiest way to do this is by using the ssh-copy-id command. In the terminal we must write ssh-copy-id user@server
