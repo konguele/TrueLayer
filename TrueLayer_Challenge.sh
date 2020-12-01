@@ -2,8 +2,8 @@
 #Script created by Juanjo for the TrueLayer challenge.
 
 #We declare the variables necessary for the correct execution of the script and the collection of data.
-day=`date | cut -d ' ' -f1-4`
-time=`date | cut -d ' ' -f4`
+day=`date +"%A %d %B"`
+time=`date +%T`
 folder="/home/`whoami`/TrueLayer"
 runningfolder=`pwd`
 public_IP=`wget -qO- ifconfig.co/ip`
@@ -47,3 +47,6 @@ echo "Run by user: " $user >> $folder/TLTest.txt
 #We end with a comment and a blank line so that it is better to see where the next one begins
 echo "--------------------------------------- END -----------------------------------------" >> $folder/TLTest.txt
 echo "" >> $folder/TLTest.txt
+
+#Shows on screen where the created file and the folder are
+echo "You can find the exercise in: $folder"
