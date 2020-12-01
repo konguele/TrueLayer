@@ -59,7 +59,7 @@ ls -R $FOLDER | grep ":" | awk -F $FOLDER '{print $2}' | cut -d":" -f1 | grep -v
 
 echo "The form with the data has been generated"
 
-#We create the new location, in this case called backup inside / tmp
+#We create the new location, in this case called backup inside /tmp
 
 if [ ! -d "$NEW_LOCATION" ]
 then
@@ -84,6 +84,8 @@ do
         cp -r -a $line $NEW_LOCATION$line
 
 done < /tmp/form.txt
+
+echo "You can find your recovered files on the following location: $LOCATION"
 
 exit 0
 EOF
